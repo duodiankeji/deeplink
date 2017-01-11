@@ -11,7 +11,7 @@
 #import <CommonCrypto/CommonCryptor.h>
 #import <CommonCrypto/CommonDigest.h>
 
-#define THOST @"https://itry.com/itrysdk/"
+#define THOST @"https://itry.com/itrysdk/info"
 
 @implementation ItrySDK
 
@@ -33,7 +33,7 @@
         
         long long time = (long long)[NSDate date].timeIntervalSince1970;
         
-        NSString *key = [NSString stringWithFormat:@"%@?a=%@&t=%ll", THOST, appkey, time];
+        NSString *key = [NSString stringWithFormat:@"%@?a=%@&t=%lld", THOST, appkey, time];
         
         key = [ItrySDK md5:key];
         
@@ -43,11 +43,9 @@
         
         NSString *info = [ItrySDK data_to_string:encryptData];
         
-        //NSString *info = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+        NSString *address = [NSString stringWithFormat:@"%@?a=%@&t=%lld&i=%@", THOST, appkey, time, info];
         
-        NSString *address = [NSString stringWithFormat:@"%@?a=%@&t=%ll&i=", THOST, appkey, time, info];
-        
-        [ItrySDK requestWithUrl:[NSURL URLWithString:url] reset:YES];
+        [ItrySDK requestWithUrl:[NSURL URLWithString:address] reset:YES];
         
         return YES;
     }
@@ -55,7 +53,7 @@
     return NO;
 }
 
-//发送信息给试客，如未成功60秒重试最多10次
+//发送信息给试客，如未成功会重试最多10次
 + (void) requestWithUrl: (NSURL*) url reset:(BOOL)reset {
     
     static BOOL g_success = NO;
@@ -90,9 +88,12 @@
         if(success)
             g_success = success;
         
+        if(g_success)
+            return;
+        
         if(!success && g_requestTimes < 10) {
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(60 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(30 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [ItrySDK requestWithUrl:url reset:NO];
             });
         }

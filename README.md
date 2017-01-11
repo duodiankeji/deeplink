@@ -43,6 +43,33 @@
 ## 流程
 ![](Sequence.png)
 
+
+## 关于上传接口(地址待定)
+1. 使用get方式上传, 形式如下：
+
+```
+https://itry.com/itrysdk/info?a=appkey&t=uploadtime&i=info
+```
+
+示例：
+
+```
+https://itry.com/itrysdk/info?a=1234&t=1484116404&i=b01308a20167267e3dceb548c134fbb2f36dbb1c2f6cfeef0eda79a2c4eb1b4253002798993f780ea85221ab4c61cb567d6a4bcb4f3438b484dc32fe41042bf1dd385c44c2de2a151c23ea88c60b70a5f74ecb5a1e13fd2633a35df0c0392e45938ab2290a862b05ab95ed64b8605a77
+```
+
+info为json的aes加密后的二进制字符串，
+
+**aes key：**  "https://itry.com/itrysdk/info?a=appkey&t=uploadtime" 的 md5值（32位）
+
+**json：**
+
+```
+{
+  "url" : "itry1234:\/\/start?session=12&time=123",
+  "idfa" : "F4F9A60C-A5AC-4D26-B168-247A66C34A3D"
+}
+```
+
 ## Author
 
 mkoo, wanglin.sun@duodian.com
