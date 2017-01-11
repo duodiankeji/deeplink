@@ -6,7 +6,7 @@
 
 2. appKey：为了避免您的appID暴露，使用appKey用于交互
 
-3. scheme头：《多点广告开放平台》分配，比如`itry1234://`，需要在app的工程文件的`URL Types`项里添加: `identifier`: `itry`，`URL Schemes`: `itry1234 `
+3. scheme头：《多点广告开放平台》分配，比如`am1234://`，需要在app的工程文件的`URL Types`项里添加: `identifier`: `admore`，`URL Schemes`: `am1234 `
 
 4. idfa：sdk中使用了idfa，请在提交appstore审核时注意
 
@@ -20,13 +20,13 @@
 ```
 - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     
-    if( [AdmoreSDK handleUrl:url withAppkey:@"1234"] ) {
+    if( [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
     
-    //或者直接 return [AdmoreSDK handleUrl:url withAppkey:@"1234"];
+    //或者直接 return [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"];
 }
 
 ```
@@ -35,13 +35,13 @@
 ```
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     
-    if( [AdmoreSDK handleUrl:url withAppkey:@"1234"] ) {
+    if( [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
     
-    //或者直接 return [AdmoreSDK handleUrl:url withAppkey:@"1234"];
+    //或者直接 return [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"];
 }
 ```
 ## 流程
@@ -69,7 +69,7 @@ info为json的aes加密后的二进制字符串，
 
 ```
 {
-  "url" : "itry1234:\/\/start?session=12&time=123",
+  "url" : "am1234:\/\/start?session=12&time=123",
   "idfa" : "F4F9A60C-A5AC-4D26-B168-247A66C34A3D"
 }
 ```
