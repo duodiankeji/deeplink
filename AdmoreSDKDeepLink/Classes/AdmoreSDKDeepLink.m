@@ -23,7 +23,7 @@
     if(url == nil || appkey.length == nil)
         return NO;
     
-    if([url.absoluteString hasPrefix:[NSString stringWithFormat:@"am%", appkey]]) {
+    if([url.absoluteString hasPrefix:appkey] || [url.absoluteString hasPrefix:[NSString stringWithFormat:@"am%", appkey]]) {
         
         NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
         NSString *bundleId = [[NSBundle mainBundle]bundleIdentifier];
