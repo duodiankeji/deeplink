@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		05F185205ACE3888D8435A6C1A0D3BE4 /* Pods-AdmoreSDKDeepLink_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C03C0E0759C1BC0CCAE530966A1A0E28 /* Pods-AdmoreSDKDeepLink_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28A79301182DEDD58E7C7B477AF021C2 /* AdmoreSDKDeepLink-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE4E06045632A77712BFBC095C4F083 /* AdmoreSDKDeepLink-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DFA32CF9A5822CEECA91C8CE8CF5BCE /* AdmoreSDKDeepLink-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BB3245296930BE8A7C81CC39A9755 /* AdmoreSDKDeepLink-dummy.m */; };
+		29B53E5BB45416D35AB7234D362B3D2F /* AdmoreSDKDeepLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA18F9BA1062A6378122BB88D376EFD /* AdmoreSDKDeepLink.m */; };
+		2AA78957CEDB7399D9732EE984137FC8 /* AdmoreSDKDeepLink-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE4E06045632A77712BFBC095C4F083 /* AdmoreSDKDeepLink-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62D1746E11A3AD242C384BD379AB0E4C /* AdmoreSDKDeepLink.h in Headers */ = {isa = PBXBuildFile; fileRef = B36B880D4CFE93CB180170CAA9D1323E /* AdmoreSDKDeepLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65E2C845D44166EEA48831C3C39DE9A0 /* AdmoreSDKDeepLink-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BB3245296930BE8A7C81CC39A9755 /* AdmoreSDKDeepLink-dummy.m */; };
 		68882132D8F8606DCAE204D7BE2504AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		C3B157C1BDAD0E5F8CB6F583F760D2DF /* Pods-AdmoreSDKDeepLink_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8B44AAEA856C3A3F28765D17869DF /* Pods-AdmoreSDKDeepLink_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC4271CF64B8C34F2592E1B65890F931 /* Pods-AdmoreSDKDeepLink_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD5E1E19B741F606808E9717C54C55F /* Pods-AdmoreSDKDeepLink_Tests-dummy.m */; };
 		D8D5E12B6FED40DC1CED306BE6809A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		DA262876748279E38F25F78C06946601 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		E304E1B67B2A78158396707AB3537D43 /* AdmoreSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E4BA26A2A27008BE1E8A5405F509D6B1 /* AdmoreSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECBC88D259BD16CB0E7F669AC4AC5A06 /* Pods-AdmoreSDKDeepLink_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE44CB53C9743C5241543658299E8D9 /* Pods-AdmoreSDKDeepLink_Example-dummy.m */; };
-		F1E3B44650C0F5335F72AE9320AF317C /* AdmoreSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AE200FA73DCA5CF325C98A17F98977 /* AdmoreSDK.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 		3B01F349ED659E6872AC644BCBBAA32B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D340DE853F89E7949D609353EC6D708 /* Pods-AdmoreSDKDeepLink_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdmoreSDKDeepLink_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		60C8D2FF97902786FD10A6BB2F0FBD4E /* Pods-AdmoreSDKDeepLink_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdmoreSDKDeepLink_Example-resources.sh"; sourceTree = "<group>"; };
-		68AE200FA73DCA5CF325C98A17F98977 /* AdmoreSDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AdmoreSDK.m; sourceTree = "<group>"; };
 		6CAB3A2FB50B13572450C4574F6B7488 /* Pods-AdmoreSDKDeepLink_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdmoreSDKDeepLink_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		70279C1389B5D23E4DB9EC93CCD21353 /* Pods-AdmoreSDKDeepLink_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdmoreSDKDeepLink_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		87F8887A607A55F976F2400D336DF035 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,14 +52,15 @@
 		968FAFFCF457D7BEEFF5E09DC9AE52C2 /* Pods-AdmoreSDKDeepLink_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AdmoreSDKDeepLink_Tests.modulemap"; sourceTree = "<group>"; };
 		997B676D82AACBB953BB4BB8244EDD8A /* AdmoreSDKDeepLink.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AdmoreSDKDeepLink.xcconfig; sourceTree = "<group>"; };
 		9A40B726B42F05FDEEA13B031A9776D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EA18F9BA1062A6378122BB88D376EFD /* AdmoreSDKDeepLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AdmoreSDKDeepLink.m; sourceTree = "<group>"; };
 		A5BFDD8D8D9D2FA562261C3701DAEF81 /* Pods-AdmoreSDKDeepLink_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdmoreSDKDeepLink_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A5C3D20B27B5A40A0E10A470D9EC8E71 /* AdmoreSDKDeepLink.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AdmoreSDKDeepLink.modulemap; sourceTree = "<group>"; };
+		B36B880D4CFE93CB180170CAA9D1323E /* AdmoreSDKDeepLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdmoreSDKDeepLink.h; sourceTree = "<group>"; };
 		B92330EC479239A74E4131278578512E /* AdmoreSDKDeepLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AdmoreSDKDeepLink.framework; path = AdmoreSDKDeepLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6CDD9A7838967E2F707B29E0FB8AEB /* Pods-AdmoreSDKDeepLink_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AdmoreSDKDeepLink_Example.modulemap"; sourceTree = "<group>"; };
 		C03C0E0759C1BC0CCAE530966A1A0E28 /* Pods-AdmoreSDKDeepLink_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdmoreSDKDeepLink_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C7C92E485C0614F7578EED0E7AF5C2D5 /* AdmoreSDKDeepLink-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdmoreSDKDeepLink-prefix.pch"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E4BA26A2A27008BE1E8A5405F509D6B1 /* AdmoreSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdmoreSDK.h; sourceTree = "<group>"; };
 		EA70F98BF705EF2B747FEF417ACF6390 /* Pods-AdmoreSDKDeepLink_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdmoreSDKDeepLink_Tests-resources.sh"; sourceTree = "<group>"; };
 		EC6EBC6D9FA2F1F089E301E746608811 /* Pods-AdmoreSDKDeepLink_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdmoreSDKDeepLink_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EFD5E1E19B741F606808E9717C54C55F /* Pods-AdmoreSDKDeepLink_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdmoreSDKDeepLink_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -161,10 +161,20 @@
 		8421218A60F4142A5DDAE125E7199598 /* AdmoreSDKDeepLink */ = {
 			isa = PBXGroup;
 			children = (
-				CCA7F0A674E7C25694B0739A2D3F1003 /* Classes */,
+				8CA705A7D2CA00DB4BFD165778C2AD10 /* Classes */,
 			);
 			name = AdmoreSDKDeepLink;
 			path = AdmoreSDKDeepLink;
+			sourceTree = "<group>";
+		};
+		8CA705A7D2CA00DB4BFD165778C2AD10 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B36B880D4CFE93CB180170CAA9D1323E /* AdmoreSDKDeepLink.h */,
+				9EA18F9BA1062A6378122BB88D376EFD /* AdmoreSDKDeepLink.m */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		A90EE38EB96F7C8B74249E61EB810DA8 /* Support Files */ = {
@@ -217,16 +227,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CCA7F0A674E7C25694B0739A2D3F1003 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E4BA26A2A27008BE1E8A5405F509D6B1 /* AdmoreSDK.h */,
-				68AE200FA73DCA5CF325C98A17F98977 /* AdmoreSDK.m */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -238,12 +238,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB27FA2C5D26E236C448515A2EC11F5D /* Headers */ = {
+		66060CA8557B09F334FAF2D06E0D3F09 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E304E1B67B2A78158396707AB3537D43 /* AdmoreSDK.h in Headers */,
-				28A79301182DEDD58E7C7B477AF021C2 /* AdmoreSDKDeepLink-umbrella.h in Headers */,
+				2AA78957CEDB7399D9732EE984137FC8 /* AdmoreSDKDeepLink-umbrella.h in Headers */,
+				62D1746E11A3AD242C384BD379AB0E4C /* AdmoreSDKDeepLink.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +262,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5FC804B4E5ACAF0A22FD1DBE94BA847 /* Build configuration list for PBXNativeTarget "AdmoreSDKDeepLink" */;
 			buildPhases = (
-				5A3B514D93EA6D6602D66300ADE440EC /* Sources */,
+				2027009789202A4670A6624DA47DF130 /* Sources */,
 				B1272A8350461F38FD8F61E52B1BF084 /* Frameworks */,
-				AB27FA2C5D26E236C448515A2EC11F5D /* Headers */,
+				66060CA8557B09F334FAF2D06E0D3F09 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -339,6 +339,15 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2027009789202A4670A6624DA47DF130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E2C845D44166EEA48831C3C39DE9A0 /* AdmoreSDKDeepLink-dummy.m in Sources */,
+				29B53E5BB45416D35AB7234D362B3D2F /* AdmoreSDKDeepLink.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29405A1C177FEE62302F60EF99844DEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,15 +361,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC4271CF64B8C34F2592E1B65890F931 /* Pods-AdmoreSDKDeepLink_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5A3B514D93EA6D6602D66300ADE440EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F1E3B44650C0F5335F72AE9320AF317C /* AdmoreSDK.m in Sources */,
-				5DFA32CF9A5822CEECA91C8CE8CF5BCE /* AdmoreSDKDeepLink-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

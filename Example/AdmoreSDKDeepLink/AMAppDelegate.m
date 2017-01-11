@@ -7,7 +7,7 @@
 //
 
 #import "AMAppDelegate.h"
-#import "AdmoreSDK.h"
+#import "AdmoreSDKDeepLink.h"
 
 @implementation AMAppDelegate
 
@@ -46,24 +46,24 @@
 
 - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     
-    if( [AdmoreSDK handleUrl:url withAppkey:@"1234"] ) {
+    if( [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
     
-    //或者直接 return [AdmoreSDK handleUrl:url withAppkey:@"1234"];
+    //或者直接 return [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"];
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     
-    if( [AdmoreSDK handleUrl:url withAppkey:@"1234"] ) {
+    if( [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
     
-    //或者直接 return [AdmoreSDK handleUrl:url withAppkey:@"1234"];
+    //或者直接 return [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"];
 }
 
 @end

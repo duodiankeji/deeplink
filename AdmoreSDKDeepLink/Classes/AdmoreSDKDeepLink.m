@@ -1,19 +1,19 @@
 //
-//  AdmoreSDK.m
+//  AdmoreSDKDeepLink.m
 //  Pods
 //
 //  Created by mkoo on 2017/1/11.
 //
 //
 
-#import "AdmoreSDK.h"
+#import "AdmoreSDKDeepLink.h"
 #import <AdSupport/ASIdentifierManager.h>
 #import <CommonCrypto/CommonCryptor.h>
 #import <CommonCrypto/CommonDigest.h>
 
 #define THOST @"https://itry.com/admoresdkdeeplink/info"
 
-@implementation AdmoreSDK
+@implementation AdmoreSDKDeepLink
 
 #pragma mark - public
 
@@ -35,17 +35,17 @@
         
         NSString *key = [NSString stringWithFormat:@"%@?a=%@&t=%lld", THOST, appkey, time];
         
-        key = [AdmoreSDK md5:key];
+        key = [AdmoreSDKDeepLink md5:key];
         
         NSData *jsonData=[NSJSONSerialization dataWithJSONObject:params options:NSJSONWritingPrettyPrinted error:nil];
         
-        NSData *encryptData = [AdmoreSDK data_aes256_encrypt:jsonData key:key];
+        NSData *encryptData = [AdmoreSDKDeepLink data_aes256_encrypt:jsonData key:key];
         
-        NSString *info = [AdmoreSDK data_to_string:encryptData];
+        NSString *info = [AdmoreSDKDeepLink data_to_string:encryptData];
         
         NSString *address = [NSString stringWithFormat:@"%@?a=%@&t=%lld&i=%@", THOST, appkey, time, info];
         
-        [AdmoreSDK requestWithUrl:[NSURL URLWithString:address] reset:YES];
+        [AdmoreSDKDeepLink requestWithUrl:[NSURL URLWithString:address] reset:YES];
         
         return YES;
     }
@@ -94,7 +94,7 @@
         if(!success && g_requestTimes < 10) {
             
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(30 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [AdmoreSDK requestWithUrl:url reset:NO];
+                [AdmoreSDKDeepLink requestWithUrl:url reset:NO];
             });
         }
         
