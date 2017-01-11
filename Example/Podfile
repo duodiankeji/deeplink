@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ItrySDK_Example' do
+  pod 'ItrySDK', :path => '../'
+
+  target 'ItrySDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

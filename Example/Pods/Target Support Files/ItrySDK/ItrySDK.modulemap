@@ -1,0 +1,6 @@
+framework module ItrySDK {
+  umbrella header "ItrySDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

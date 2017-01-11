@@ -1,0 +1,6 @@
+framework module Pods_ItrySDK_Example {
+  umbrella header "Pods-ItrySDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
