@@ -4,7 +4,7 @@
 ## 说明
 1. appID：app在《多点广告开放平台》的唯一ID
 
-2. appKey：为了避免您的appID暴露，使用appKey用户交互
+2. appKey：为了避免您的appID暴露，使用appKey用于交互
 
 3. scheme头：《多点广告开放平台》分配，比如`itry1234://`，需要在app的工程文件的`URL Types`项里添加: `identifier`: `itry`，`URL Schemes`: `itry1234 `
 
