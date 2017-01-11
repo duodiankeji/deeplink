@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>AdmoreSDKDeepLink.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AdmoreSDKDeepLink_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AdmoreSDKDeepLink_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>016A7A7CD220B70A6DD5677B6F5A0C61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>368A0AAC6776822C50B79D8AA8373316</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB308EC23FEE318BCA884D3DEF55B538</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,16 +1,16 @@
 PODS:
-  - ItrySDK (0.1.0)
+  - AdmoreSDKDeepLink (0.1.0)
 
 DEPENDENCIES:
-  - ItrySDK (from `../`)
+  - AdmoreSDKDeepLink (from `../`)
 
 EXTERNAL SOURCES:
-  ItrySDK:
+  AdmoreSDKDeepLink:
     :path: ../
 
 SPEC CHECKSUMS:
-  ItrySDK: f95fc4205970f9e9aa5291af619858d4a0413f01
+  AdmoreSDKDeepLink: 09d993e7b643a31d52d1ef7c8ab1846bd2c4c261
 
-PODFILE CHECKSUM: 673506ffd8644d2dce2399ad4f269230d8789d18
+PODFILE CHECKSUM: 1b8c1b033c2a0cf41eec92b5c0f98e5dabeaa841
 
 COCOAPODS: 1.1.1

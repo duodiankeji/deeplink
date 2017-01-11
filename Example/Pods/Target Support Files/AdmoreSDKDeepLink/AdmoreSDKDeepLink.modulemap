@@ -1,0 +1,6 @@
+framework module AdmoreSDKDeepLink {
+  umbrella header "AdmoreSDKDeepLink-umbrella.h"
+
+  export *
+  module * { export * }
+}

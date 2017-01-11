@@ -7,146 +7,136 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C4C13A87927A5D679088F369419A47F /* Pods-ItrySDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE2C347A5B4F33D9864B2F1F28962F8 /* Pods-ItrySDK_Tests-dummy.m */; };
-		249E39AA9DFB97BC9A6CF319EA92E663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		4B43C82243990A69D7CD1BB4CC04464A /* ItrySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B363DE0EB7F58AB1C6890C5143993DFE /* ItrySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		550F3ABF072982658FEA90F7EE81E804 /* Pods-ItrySDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C24A057DECF29FE254E9CDD6613A52A /* Pods-ItrySDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5961DD1095A88AC6F7D84B1CAC0377D2 /* Pods-ItrySDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 345593D2B13008A420CEF32937AA935F /* Pods-ItrySDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6618E07184DA989F4F0587F2D860A1A4 /* Pods-ItrySDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 406235C042D9F43557237EC1A4953B77 /* Pods-ItrySDK_Example-dummy.m */; };
-		79D6A6790D2675CF07264BBEE6B597A3 /* ItrySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FE75978F343D0C8915B52DD4AEB1AF /* ItrySDK-dummy.m */; };
-		8E4FA0BFB0EDD53DD5CF3467038459AB /* ItrySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 2787624E31BFA7933D7AF56169E0794D /* ItrySDK.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A8B40EBC5D83C99595F99D0CB9498670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		AF082DDD3AF2E03E3D71DCB2936B7094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		FCAC6740A645C092DE16D6791814CA83 /* ItrySDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CD4032F862969D5F3EC45FB6975DE7 /* ItrySDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05F185205ACE3888D8435A6C1A0D3BE4 /* Pods-AdmoreSDKDeepLink_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C03C0E0759C1BC0CCAE530966A1A0E28 /* Pods-AdmoreSDKDeepLink_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28A79301182DEDD58E7C7B477AF021C2 /* AdmoreSDKDeepLink-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE4E06045632A77712BFBC095C4F083 /* AdmoreSDKDeepLink-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DFA32CF9A5822CEECA91C8CE8CF5BCE /* AdmoreSDKDeepLink-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BB3245296930BE8A7C81CC39A9755 /* AdmoreSDKDeepLink-dummy.m */; };
+		68882132D8F8606DCAE204D7BE2504AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C3B157C1BDAD0E5F8CB6F583F760D2DF /* Pods-AdmoreSDKDeepLink_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA8B44AAEA856C3A3F28765D17869DF /* Pods-AdmoreSDKDeepLink_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC4271CF64B8C34F2592E1B65890F931 /* Pods-AdmoreSDKDeepLink_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD5E1E19B741F606808E9717C54C55F /* Pods-AdmoreSDKDeepLink_Tests-dummy.m */; };
+		D8D5E12B6FED40DC1CED306BE6809A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DA262876748279E38F25F78C06946601 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E304E1B67B2A78158396707AB3537D43 /* AdmoreSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E4BA26A2A27008BE1E8A5405F509D6B1 /* AdmoreSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECBC88D259BD16CB0E7F669AC4AC5A06 /* Pods-AdmoreSDKDeepLink_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE44CB53C9743C5241543658299E8D9 /* Pods-AdmoreSDKDeepLink_Example-dummy.m */; };
+		F1E3B44650C0F5335F72AE9320AF317C /* AdmoreSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AE200FA73DCA5CF325C98A17F98977 /* AdmoreSDK.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		194A16A739BB9430F16811D361C1E851 /* PBXContainerItemProxy */ = {
+		F3F4D4918520A9D281F62CA3BC158C60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0E09D58443A49A0DEEDD3ABF1514DEAC;
-			remoteInfo = ItrySDK;
+			remoteGlobalIDString = 016A7A7CD220B70A6DD5677B6F5A0C61;
+			remoteInfo = AdmoreSDKDeepLink;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2787624E31BFA7933D7AF56169E0794D /* ItrySDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ItrySDK.m; sourceTree = "<group>"; };
-		2E2915D7E0C7484407C77AC860642A0C /* ItrySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ItrySDK.xcconfig; sourceTree = "<group>"; };
-		345593D2B13008A420CEF32937AA935F /* Pods-ItrySDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ItrySDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		3C8726762A5EA2E2170CCF668C874F98 /* Pods-ItrySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ItrySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3F92314BB01EE8EF2CE6D335436A78AF /* Pods-ItrySDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ItrySDK_Example-resources.sh"; sourceTree = "<group>"; };
-		406235C042D9F43557237EC1A4953B77 /* Pods-ItrySDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ItrySDK_Example-dummy.m"; sourceTree = "<group>"; };
-		41370563262F7D4DBB482F1BA78C250F /* ItrySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ItrySDK-prefix.pch"; sourceTree = "<group>"; };
-		46CD4032F862969D5F3EC45FB6975DE7 /* ItrySDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ItrySDK-umbrella.h"; sourceTree = "<group>"; };
-		4B11635564FADB0AA86CBDCF8580F75E /* Pods-ItrySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ItrySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		52FE75978F343D0C8915B52DD4AEB1AF /* ItrySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ItrySDK-dummy.m"; sourceTree = "<group>"; };
-		53D30F1A7B7EFE69465E5F93037B8B53 /* ItrySDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ItrySDK.modulemap; sourceTree = "<group>"; };
-		5645BB3DA4745718C0BEEAE3737BD4DB /* Pods-ItrySDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ItrySDK_Tests-resources.sh"; sourceTree = "<group>"; };
-		59D52BC8081DBE38C49A5EA982D37DCD /* Pods-ItrySDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ItrySDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		5C24A057DECF29FE254E9CDD6613A52A /* Pods-ItrySDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ItrySDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		64B87835B9C5E61F2047DF75A2705D77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DFFCB6610B55BBA617740A6FE3832BE /* Pods-ItrySDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ItrySDK_Tests.modulemap"; sourceTree = "<group>"; };
-		7BFCD5A407B7A9A40DD5FA0B9571B24F /* Pods-ItrySDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ItrySDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7DF6566BD4EB648C9FE0C9BBBB991B3C /* Pods-ItrySDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ItrySDK_Example.modulemap"; sourceTree = "<group>"; };
+		0210B5F34D2581EF6ED9D7E328C6871D /* Pods-AdmoreSDKDeepLink_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdmoreSDKDeepLink_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1BE4E06045632A77712BFBC095C4F083 /* AdmoreSDKDeepLink-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdmoreSDKDeepLink-umbrella.h"; sourceTree = "<group>"; };
+		1E003CB52551BBB4F8272321F5CE9796 /* Pods_AdmoreSDKDeepLink_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdmoreSDKDeepLink_Tests.framework; path = "Pods-AdmoreSDKDeepLink_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5BB3245296930BE8A7C81CC39A9755 /* AdmoreSDKDeepLink-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AdmoreSDKDeepLink-dummy.m"; sourceTree = "<group>"; };
+		1FA8B44AAEA856C3A3F28765D17869DF /* Pods-AdmoreSDKDeepLink_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdmoreSDKDeepLink_Example-umbrella.h"; sourceTree = "<group>"; };
+		2D71EBA47328A64090FECD92CB67EEB2 /* Pods_AdmoreSDKDeepLink_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdmoreSDKDeepLink_Example.framework; path = "Pods-AdmoreSDKDeepLink_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3309B5E3DBD424C6A02D2E341E7BFA62 /* Pods-AdmoreSDKDeepLink_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdmoreSDKDeepLink_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3519C820405FA365B51829392217FE5E /* Pods-AdmoreSDKDeepLink_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdmoreSDKDeepLink_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		371CEB805AD7C3B0DAD71DE0751BE380 /* Pods-AdmoreSDKDeepLink_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdmoreSDKDeepLink_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		3B01F349ED659E6872AC644BCBBAA32B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D340DE853F89E7949D609353EC6D708 /* Pods-AdmoreSDKDeepLink_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdmoreSDKDeepLink_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		60C8D2FF97902786FD10A6BB2F0FBD4E /* Pods-AdmoreSDKDeepLink_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdmoreSDKDeepLink_Example-resources.sh"; sourceTree = "<group>"; };
+		68AE200FA73DCA5CF325C98A17F98977 /* AdmoreSDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AdmoreSDK.m; sourceTree = "<group>"; };
+		6CAB3A2FB50B13572450C4574F6B7488 /* Pods-AdmoreSDKDeepLink_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdmoreSDKDeepLink_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		70279C1389B5D23E4DB9EC93CCD21353 /* Pods-AdmoreSDKDeepLink_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdmoreSDKDeepLink_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		87F8887A607A55F976F2400D336DF035 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AE44CB53C9743C5241543658299E8D9 /* Pods-AdmoreSDKDeepLink_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdmoreSDKDeepLink_Example-dummy.m"; sourceTree = "<group>"; };
+		8BF4FBF8B5E62B3052BA6AF5A7DB458F /* Pods-AdmoreSDKDeepLink_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdmoreSDKDeepLink_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96C045FDE16D9EB924B01299667EFFF8 /* Pods-ItrySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ItrySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B32D69E2ACB48A1F4663E4126A04F47C /* Pods-ItrySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ItrySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B363DE0EB7F58AB1C6890C5143993DFE /* ItrySDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ItrySDK.h; sourceTree = "<group>"; };
-		B4542E70150899262E386D27581FD0E7 /* Pods-ItrySDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ItrySDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		968FAFFCF457D7BEEFF5E09DC9AE52C2 /* Pods-AdmoreSDKDeepLink_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AdmoreSDKDeepLink_Tests.modulemap"; sourceTree = "<group>"; };
+		997B676D82AACBB953BB4BB8244EDD8A /* AdmoreSDKDeepLink.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AdmoreSDKDeepLink.xcconfig; sourceTree = "<group>"; };
+		9A40B726B42F05FDEEA13B031A9776D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BFDD8D8D9D2FA562261C3701DAEF81 /* Pods-AdmoreSDKDeepLink_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdmoreSDKDeepLink_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A5C3D20B27B5A40A0E10A470D9EC8E71 /* AdmoreSDKDeepLink.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AdmoreSDKDeepLink.modulemap; sourceTree = "<group>"; };
+		B92330EC479239A74E4131278578512E /* AdmoreSDKDeepLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AdmoreSDKDeepLink.framework; path = AdmoreSDKDeepLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6CDD9A7838967E2F707B29E0FB8AEB /* Pods-AdmoreSDKDeepLink_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AdmoreSDKDeepLink_Example.modulemap"; sourceTree = "<group>"; };
+		C03C0E0759C1BC0CCAE530966A1A0E28 /* Pods-AdmoreSDKDeepLink_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdmoreSDKDeepLink_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C7C92E485C0614F7578EED0E7AF5C2D5 /* AdmoreSDKDeepLink-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdmoreSDKDeepLink-prefix.pch"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CEDED8EE5833025A448F13744F93214E /* Pods-ItrySDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ItrySDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CFE2C347A5B4F33D9864B2F1F28962F8 /* Pods-ItrySDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ItrySDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		CFFCA380C0F9E9DF3770F859281CD7B0 /* Pods_ItrySDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ItrySDK_Tests.framework; path = "Pods-ItrySDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D65649CE7F4B2E2AC26598228D9A08FE /* Pods-ItrySDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ItrySDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E143FF2C255BE40FFB9F30E67D13162E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E26E8C66E52D1510F8E1B93AE91FDF83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE90A97FC732A0EEA127C567B4FC8DAB /* ItrySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ItrySDK.framework; path = ItrySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7F1F93E57789F1C23FE8371568BD3EA /* Pods-ItrySDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ItrySDK_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F8CEB17D0AB44BC6F36B779A358B16B5 /* Pods_ItrySDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ItrySDK_Example.framework; path = "Pods-ItrySDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4BA26A2A27008BE1E8A5405F509D6B1 /* AdmoreSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdmoreSDK.h; sourceTree = "<group>"; };
+		EA70F98BF705EF2B747FEF417ACF6390 /* Pods-AdmoreSDKDeepLink_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdmoreSDKDeepLink_Tests-resources.sh"; sourceTree = "<group>"; };
+		EC6EBC6D9FA2F1F089E301E746608811 /* Pods-AdmoreSDKDeepLink_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdmoreSDKDeepLink_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EFD5E1E19B741F606808E9717C54C55F /* Pods-AdmoreSDKDeepLink_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdmoreSDKDeepLink_Tests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		542BFD964965ED2F41AFA3F7976907CE /* Frameworks */ = {
+		7CBE053E668B2F0F2D170CBCB20DCCC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF082DDD3AF2E03E3D71DCB2936B7094 /* Foundation.framework in Frameworks */,
+				68882132D8F8606DCAE204D7BE2504AA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68A2D64D4A785CCC7AA4E50D7B61BC12 /* Frameworks */ = {
+		B1272A8350461F38FD8F61E52B1BF084 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8B40EBC5D83C99595F99D0CB9498670 /* Foundation.framework in Frameworks */,
+				D8D5E12B6FED40DC1CED306BE6809A6C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E86A0145F338156BF2E5ABA9D82F76BC /* Frameworks */ = {
+		C7163CE36FBE850B97AF4C3963E4546E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249E39AA9DFB97BC9A6CF319EA92E663 /* Foundation.framework in Frameworks */,
+				DA262876748279E38F25F78C06946601 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0919C8C6F5888C118C9C1A38F6787648 /* Development Pods */ = {
+		09F3AC2DAF8AA606A723AF452D206968 /* Pods-AdmoreSDKDeepLink_Example */ = {
 			isa = PBXGroup;
 			children = (
-				66C16ACE3E64FB0D559B07D372A77A81 /* ItrySDK */,
+				3B01F349ED659E6872AC644BCBBAA32B /* Info.plist */,
+				BF6CDD9A7838967E2F707B29E0FB8AEB /* Pods-AdmoreSDKDeepLink_Example.modulemap */,
+				0210B5F34D2581EF6ED9D7E328C6871D /* Pods-AdmoreSDKDeepLink_Example-acknowledgements.markdown */,
+				70279C1389B5D23E4DB9EC93CCD21353 /* Pods-AdmoreSDKDeepLink_Example-acknowledgements.plist */,
+				8AE44CB53C9743C5241543658299E8D9 /* Pods-AdmoreSDKDeepLink_Example-dummy.m */,
+				A5BFDD8D8D9D2FA562261C3701DAEF81 /* Pods-AdmoreSDKDeepLink_Example-frameworks.sh */,
+				60C8D2FF97902786FD10A6BB2F0FBD4E /* Pods-AdmoreSDKDeepLink_Example-resources.sh */,
+				1FA8B44AAEA856C3A3F28765D17869DF /* Pods-AdmoreSDKDeepLink_Example-umbrella.h */,
+				3519C820405FA365B51829392217FE5E /* Pods-AdmoreSDKDeepLink_Example.debug.xcconfig */,
+				3309B5E3DBD424C6A02D2E341E7BFA62 /* Pods-AdmoreSDKDeepLink_Example.release.xcconfig */,
+			);
+			name = "Pods-AdmoreSDKDeepLink_Example";
+			path = "Target Support Files/Pods-AdmoreSDKDeepLink_Example";
+			sourceTree = "<group>";
+		};
+		0C5DEE99971CDEF3481987650A634DD2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23843A3DDF171F53E65EF6D14ED5C1B3 /* AdmoreSDKDeepLink */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		29DCFC8B43698DE1654DFA9CCFF6FE21 /* ItrySDK */ = {
+		23843A3DDF171F53E65EF6D14ED5C1B3 /* AdmoreSDKDeepLink */ = {
 			isa = PBXGroup;
 			children = (
-				B85BAC05EE46A1D2A7E49D89416875D0 /* Classes */,
+				8421218A60F4142A5DDAE125E7199598 /* AdmoreSDKDeepLink */,
+				A90EE38EB96F7C8B74249E61EB810DA8 /* Support Files */,
 			);
-			name = ItrySDK;
-			path = ItrySDK;
-			sourceTree = "<group>";
-		};
-		2ABCD5517D62D2539016AA78B3FF47CB /* Pods-ItrySDK_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E26E8C66E52D1510F8E1B93AE91FDF83 /* Info.plist */,
-				6DFFCB6610B55BBA617740A6FE3832BE /* Pods-ItrySDK_Tests.modulemap */,
-				CEDED8EE5833025A448F13744F93214E /* Pods-ItrySDK_Tests-acknowledgements.markdown */,
-				B4542E70150899262E386D27581FD0E7 /* Pods-ItrySDK_Tests-acknowledgements.plist */,
-				CFE2C347A5B4F33D9864B2F1F28962F8 /* Pods-ItrySDK_Tests-dummy.m */,
-				59D52BC8081DBE38C49A5EA982D37DCD /* Pods-ItrySDK_Tests-frameworks.sh */,
-				5645BB3DA4745718C0BEEAE3737BD4DB /* Pods-ItrySDK_Tests-resources.sh */,
-				345593D2B13008A420CEF32937AA935F /* Pods-ItrySDK_Tests-umbrella.h */,
-				4B11635564FADB0AA86CBDCF8580F75E /* Pods-ItrySDK_Tests.debug.xcconfig */,
-				B32D69E2ACB48A1F4663E4126A04F47C /* Pods-ItrySDK_Tests.release.xcconfig */,
-			);
-			name = "Pods-ItrySDK_Tests";
-			path = "Target Support Files/Pods-ItrySDK_Tests";
-			sourceTree = "<group>";
-		};
-		4BAA70F878B8188D0C76ED3C63BC76AF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EE90A97FC732A0EEA127C567B4FC8DAB /* ItrySDK.framework */,
-				F8CEB17D0AB44BC6F36B779A358B16B5 /* Pods_ItrySDK_Example.framework */,
-				CFFCA380C0F9E9DF3770F859281CD7B0 /* Pods_ItrySDK_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		66C16ACE3E64FB0D559B07D372A77A81 /* ItrySDK */ = {
-			isa = PBXGroup;
-			children = (
-				29DCFC8B43698DE1654DFA9CCFF6FE21 /* ItrySDK */,
-				96B7718AC50B00A189CDE53D3573066B /* Support Files */,
-			);
-			name = ItrySDK;
+			name = AdmoreSDKDeepLink;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		4E24B693566A30269D0F08D7A95BCC59 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				09F3AC2DAF8AA606A723AF452D206968 /* Pods-AdmoreSDKDeepLink_Example */,
+				C0EFAEF7C2CA42C31C6DCD195693F6B3 /* Pods-AdmoreSDKDeepLink_Tests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -161,53 +151,34 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0919C8C6F5888C118C9C1A38F6787648 /* Development Pods */,
+				0C5DEE99971CDEF3481987650A634DD2 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4BAA70F878B8188D0C76ED3C63BC76AF /* Products */,
-				D2C6B71AEF691A75C9343CB2E0BCFA71 /* Targets Support Files */,
+				C7E06DD1698C519A41140953B442679A /* Products */,
+				4E24B693566A30269D0F08D7A95BCC59 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		860A0D08AFF5E36AE29C03E0D9A1B918 /* Pods-ItrySDK_Example */ = {
+		8421218A60F4142A5DDAE125E7199598 /* AdmoreSDKDeepLink */ = {
 			isa = PBXGroup;
 			children = (
-				64B87835B9C5E61F2047DF75A2705D77 /* Info.plist */,
-				7DF6566BD4EB648C9FE0C9BBBB991B3C /* Pods-ItrySDK_Example.modulemap */,
-				7BFCD5A407B7A9A40DD5FA0B9571B24F /* Pods-ItrySDK_Example-acknowledgements.markdown */,
-				D65649CE7F4B2E2AC26598228D9A08FE /* Pods-ItrySDK_Example-acknowledgements.plist */,
-				406235C042D9F43557237EC1A4953B77 /* Pods-ItrySDK_Example-dummy.m */,
-				F7F1F93E57789F1C23FE8371568BD3EA /* Pods-ItrySDK_Example-frameworks.sh */,
-				3F92314BB01EE8EF2CE6D335436A78AF /* Pods-ItrySDK_Example-resources.sh */,
-				5C24A057DECF29FE254E9CDD6613A52A /* Pods-ItrySDK_Example-umbrella.h */,
-				3C8726762A5EA2E2170CCF668C874F98 /* Pods-ItrySDK_Example.debug.xcconfig */,
-				96C045FDE16D9EB924B01299667EFFF8 /* Pods-ItrySDK_Example.release.xcconfig */,
+				CCA7F0A674E7C25694B0739A2D3F1003 /* Classes */,
 			);
-			name = "Pods-ItrySDK_Example";
-			path = "Target Support Files/Pods-ItrySDK_Example";
+			name = AdmoreSDKDeepLink;
+			path = AdmoreSDKDeepLink;
 			sourceTree = "<group>";
 		};
-		96B7718AC50B00A189CDE53D3573066B /* Support Files */ = {
+		A90EE38EB96F7C8B74249E61EB810DA8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E143FF2C255BE40FFB9F30E67D13162E /* Info.plist */,
-				53D30F1A7B7EFE69465E5F93037B8B53 /* ItrySDK.modulemap */,
-				2E2915D7E0C7484407C77AC860642A0C /* ItrySDK.xcconfig */,
-				52FE75978F343D0C8915B52DD4AEB1AF /* ItrySDK-dummy.m */,
-				41370563262F7D4DBB482F1BA78C250F /* ItrySDK-prefix.pch */,
-				46CD4032F862969D5F3EC45FB6975DE7 /* ItrySDK-umbrella.h */,
+				A5C3D20B27B5A40A0E10A470D9EC8E71 /* AdmoreSDKDeepLink.modulemap */,
+				997B676D82AACBB953BB4BB8244EDD8A /* AdmoreSDKDeepLink.xcconfig */,
+				1F5BB3245296930BE8A7C81CC39A9755 /* AdmoreSDKDeepLink-dummy.m */,
+				C7C92E485C0614F7578EED0E7AF5C2D5 /* AdmoreSDKDeepLink-prefix.pch */,
+				1BE4E06045632A77712BFBC095C4F083 /* AdmoreSDKDeepLink-umbrella.h */,
+				87F8887A607A55F976F2400D336DF035 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ItrySDK";
-			sourceTree = "<group>";
-		};
-		B85BAC05EE46A1D2A7E49D89416875D0 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B363DE0EB7F58AB1C6890C5143993DFE /* ItrySDK.h */,
-				2787624E31BFA7933D7AF56169E0794D /* ItrySDK.m */,
-			);
-			name = Classes;
-			path = Classes;
+			path = "Example/Pods/Target Support Files/AdmoreSDKDeepLink";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -218,96 +189,125 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D2C6B71AEF691A75C9343CB2E0BCFA71 /* Targets Support Files */ = {
+		C0EFAEF7C2CA42C31C6DCD195693F6B3 /* Pods-AdmoreSDKDeepLink_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				860A0D08AFF5E36AE29C03E0D9A1B918 /* Pods-ItrySDK_Example */,
-				2ABCD5517D62D2539016AA78B3FF47CB /* Pods-ItrySDK_Tests */,
+				9A40B726B42F05FDEEA13B031A9776D2 /* Info.plist */,
+				968FAFFCF457D7BEEFF5E09DC9AE52C2 /* Pods-AdmoreSDKDeepLink_Tests.modulemap */,
+				8BF4FBF8B5E62B3052BA6AF5A7DB458F /* Pods-AdmoreSDKDeepLink_Tests-acknowledgements.markdown */,
+				6CAB3A2FB50B13572450C4574F6B7488 /* Pods-AdmoreSDKDeepLink_Tests-acknowledgements.plist */,
+				EFD5E1E19B741F606808E9717C54C55F /* Pods-AdmoreSDKDeepLink_Tests-dummy.m */,
+				371CEB805AD7C3B0DAD71DE0751BE380 /* Pods-AdmoreSDKDeepLink_Tests-frameworks.sh */,
+				EA70F98BF705EF2B747FEF417ACF6390 /* Pods-AdmoreSDKDeepLink_Tests-resources.sh */,
+				C03C0E0759C1BC0CCAE530966A1A0E28 /* Pods-AdmoreSDKDeepLink_Tests-umbrella.h */,
+				5D340DE853F89E7949D609353EC6D708 /* Pods-AdmoreSDKDeepLink_Tests.debug.xcconfig */,
+				EC6EBC6D9FA2F1F089E301E746608811 /* Pods-AdmoreSDKDeepLink_Tests.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-AdmoreSDKDeepLink_Tests";
+			path = "Target Support Files/Pods-AdmoreSDKDeepLink_Tests";
+			sourceTree = "<group>";
+		};
+		C7E06DD1698C519A41140953B442679A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B92330EC479239A74E4131278578512E /* AdmoreSDKDeepLink.framework */,
+				2D71EBA47328A64090FECD92CB67EEB2 /* Pods_AdmoreSDKDeepLink_Example.framework */,
+				1E003CB52551BBB4F8272321F5CE9796 /* Pods_AdmoreSDKDeepLink_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCA7F0A674E7C25694B0739A2D3F1003 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E4BA26A2A27008BE1E8A5405F509D6B1 /* AdmoreSDK.h */,
+				68AE200FA73DCA5CF325C98A17F98977 /* AdmoreSDK.m */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		07C52B9E9509126781BCE0E8CD007CCF /* Headers */ = {
+		0135C2DC7045D8BBC9201B1FD7907162 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCAC6740A645C092DE16D6791814CA83 /* ItrySDK-umbrella.h in Headers */,
-				4B43C82243990A69D7CD1BB4CC04464A /* ItrySDK.h in Headers */,
+				C3B157C1BDAD0E5F8CB6F583F760D2DF /* Pods-AdmoreSDKDeepLink_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F4F8580C971682C388E359F504BDC0C /* Headers */ = {
+		AB27FA2C5D26E236C448515A2EC11F5D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5961DD1095A88AC6F7D84B1CAC0377D2 /* Pods-ItrySDK_Tests-umbrella.h in Headers */,
+				E304E1B67B2A78158396707AB3537D43 /* AdmoreSDK.h in Headers */,
+				28A79301182DEDD58E7C7B477AF021C2 /* AdmoreSDKDeepLink-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99581317A3BC715E2C014063F477AC85 /* Headers */ = {
+		C3DAC5EDA93B3FCEB4F38C5A68F13D09 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550F3ABF072982658FEA90F7EE81E804 /* Pods-ItrySDK_Example-umbrella.h in Headers */,
+				05F185205ACE3888D8435A6C1A0D3BE4 /* Pods-AdmoreSDKDeepLink_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0E09D58443A49A0DEEDD3ABF1514DEAC /* ItrySDK */ = {
+		016A7A7CD220B70A6DD5677B6F5A0C61 /* AdmoreSDKDeepLink */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF257D1854F12DDA3E77DCF81DCB4E27 /* Build configuration list for PBXNativeTarget "ItrySDK" */;
+			buildConfigurationList = C5FC804B4E5ACAF0A22FD1DBE94BA847 /* Build configuration list for PBXNativeTarget "AdmoreSDKDeepLink" */;
 			buildPhases = (
-				04AF35BF76BD206EA8BA83FA43816219 /* Sources */,
-				68A2D64D4A785CCC7AA4E50D7B61BC12 /* Frameworks */,
-				07C52B9E9509126781BCE0E8CD007CCF /* Headers */,
+				5A3B514D93EA6D6602D66300ADE440EC /* Sources */,
+				B1272A8350461F38FD8F61E52B1BF084 /* Frameworks */,
+				AB27FA2C5D26E236C448515A2EC11F5D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ItrySDK;
-			productName = ItrySDK;
-			productReference = EE90A97FC732A0EEA127C567B4FC8DAB /* ItrySDK.framework */;
+			name = AdmoreSDKDeepLink;
+			productName = AdmoreSDKDeepLink;
+			productReference = B92330EC479239A74E4131278578512E /* AdmoreSDKDeepLink.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		187F6B1E5F73ECAEB9EB577FAAD78890 /* Pods-ItrySDK_Example */ = {
+		368A0AAC6776822C50B79D8AA8373316 /* Pods-AdmoreSDKDeepLink_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BEA7204878523C346888AE60BCC964E /* Build configuration list for PBXNativeTarget "Pods-ItrySDK_Example" */;
+			buildConfigurationList = B93014DA3D9AAB655697F195E8838359 /* Build configuration list for PBXNativeTarget "Pods-AdmoreSDKDeepLink_Example" */;
 			buildPhases = (
-				47ED12D925D0BE806B2B76B7931C0039 /* Sources */,
-				E86A0145F338156BF2E5ABA9D82F76BC /* Frameworks */,
-				99581317A3BC715E2C014063F477AC85 /* Headers */,
+				29405A1C177FEE62302F60EF99844DEB /* Sources */,
+				C7163CE36FBE850B97AF4C3963E4546E /* Frameworks */,
+				0135C2DC7045D8BBC9201B1FD7907162 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6A5329B3AA73F4AB8D773966924D0672 /* PBXTargetDependency */,
+				ED33602534F683F2619543D28C988A2F /* PBXTargetDependency */,
 			);
-			name = "Pods-ItrySDK_Example";
-			productName = "Pods-ItrySDK_Example";
-			productReference = F8CEB17D0AB44BC6F36B779A358B16B5 /* Pods_ItrySDK_Example.framework */;
+			name = "Pods-AdmoreSDKDeepLink_Example";
+			productName = "Pods-AdmoreSDKDeepLink_Example";
+			productReference = 2D71EBA47328A64090FECD92CB67EEB2 /* Pods_AdmoreSDKDeepLink_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2C88F9F3407C4AC1EFAD2DF3A8C07DA0 /* Pods-ItrySDK_Tests */ = {
+		EB308EC23FEE318BCA884D3DEF55B538 /* Pods-AdmoreSDKDeepLink_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E46FB471C4C63904625A841728E3AA92 /* Build configuration list for PBXNativeTarget "Pods-ItrySDK_Tests" */;
+			buildConfigurationList = FF14B60B72F4EDE68EDE797A92E6DF8A /* Build configuration list for PBXNativeTarget "Pods-AdmoreSDKDeepLink_Tests" */;
 			buildPhases = (
-				D065C30BB21C5D888068D8175347CE3D /* Sources */,
-				542BFD964965ED2F41AFA3F7976907CE /* Frameworks */,
-				5F4F8580C971682C388E359F504BDC0C /* Headers */,
+				3A05A7F9874FCBD9771AC87DC43DB68C /* Sources */,
+				7CBE053E668B2F0F2D170CBCB20DCCC7 /* Frameworks */,
+				C3DAC5EDA93B3FCEB4F38C5A68F13D09 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ItrySDK_Tests";
-			productName = "Pods-ItrySDK_Tests";
-			productReference = CFFCA380C0F9E9DF3770F859281CD7B0 /* Pods_ItrySDK_Tests.framework */;
+			name = "Pods-AdmoreSDKDeepLink_Tests";
+			productName = "Pods-AdmoreSDKDeepLink_Tests";
+			productReference = 1E003CB52551BBB4F8272321F5CE9796 /* Pods_AdmoreSDKDeepLink_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -327,89 +327,58 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4BAA70F878B8188D0C76ED3C63BC76AF /* Products */;
+			productRefGroup = C7E06DD1698C519A41140953B442679A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0E09D58443A49A0DEEDD3ABF1514DEAC /* ItrySDK */,
-				187F6B1E5F73ECAEB9EB577FAAD78890 /* Pods-ItrySDK_Example */,
-				2C88F9F3407C4AC1EFAD2DF3A8C07DA0 /* Pods-ItrySDK_Tests */,
+				016A7A7CD220B70A6DD5677B6F5A0C61 /* AdmoreSDKDeepLink */,
+				368A0AAC6776822C50B79D8AA8373316 /* Pods-AdmoreSDKDeepLink_Example */,
+				EB308EC23FEE318BCA884D3DEF55B538 /* Pods-AdmoreSDKDeepLink_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04AF35BF76BD206EA8BA83FA43816219 /* Sources */ = {
+		29405A1C177FEE62302F60EF99844DEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D6A6790D2675CF07264BBEE6B597A3 /* ItrySDK-dummy.m in Sources */,
-				8E4FA0BFB0EDD53DD5CF3467038459AB /* ItrySDK.m in Sources */,
+				ECBC88D259BD16CB0E7F669AC4AC5A06 /* Pods-AdmoreSDKDeepLink_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47ED12D925D0BE806B2B76B7931C0039 /* Sources */ = {
+		3A05A7F9874FCBD9771AC87DC43DB68C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6618E07184DA989F4F0587F2D860A1A4 /* Pods-ItrySDK_Example-dummy.m in Sources */,
+				CC4271CF64B8C34F2592E1B65890F931 /* Pods-AdmoreSDKDeepLink_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D065C30BB21C5D888068D8175347CE3D /* Sources */ = {
+		5A3B514D93EA6D6602D66300ADE440EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C4C13A87927A5D679088F369419A47F /* Pods-ItrySDK_Tests-dummy.m in Sources */,
+				F1E3B44650C0F5335F72AE9320AF317C /* AdmoreSDK.m in Sources */,
+				5DFA32CF9A5822CEECA91C8CE8CF5BCE /* AdmoreSDKDeepLink-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6A5329B3AA73F4AB8D773966924D0672 /* PBXTargetDependency */ = {
+		ED33602534F683F2619543D28C988A2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ItrySDK;
-			target = 0E09D58443A49A0DEEDD3ABF1514DEAC /* ItrySDK */;
-			targetProxy = 194A16A739BB9430F16811D361C1E851 /* PBXContainerItemProxy */;
+			name = AdmoreSDKDeepLink;
+			target = 016A7A7CD220B70A6DD5677B6F5A0C61 /* AdmoreSDKDeepLink */;
+			targetProxy = F3F4D4918520A9D281F62CA3BC158C60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1712AF91825336560D028C339DA0169F /* Release */ = {
+		134CFF59E93AB4978BE1A71F9C0F36C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E2915D7E0C7484407C77AC860642A0C /* ItrySDK.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ItrySDK/ItrySDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ItrySDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ItrySDK/ItrySDK.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ItrySDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		28888BE78F387D531A4DB1D395EBE372 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C8726762A5EA2E2170CCF668C874F98 /* Pods-ItrySDK_Example.debug.xcconfig */;
+			baseConfigurationReference = 5D340DE853F89E7949D609353EC6D708 /* Pods-AdmoreSDKDeepLink_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -422,18 +391,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ItrySDK_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdmoreSDKDeepLink_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ItrySDK_Example/Pods-ItrySDK_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-AdmoreSDKDeepLink_Tests/Pods-AdmoreSDKDeepLink_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ItrySDK_Example;
+				PRODUCT_NAME = Pods_AdmoreSDKDeepLink_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,7 +411,139 @@
 			};
 			name = Debug;
 		};
-		5B2523835DF0F7253DABA3E98BD932C4 /* Release */ = {
+		18736D90D9E4FDAA330EA57053193C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3309B5E3DBD424C6A02D2E341E7BFA62 /* Pods-AdmoreSDKDeepLink_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AdmoreSDKDeepLink_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdmoreSDKDeepLink_Example/Pods-AdmoreSDKDeepLink_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AdmoreSDKDeepLink_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		43A967B2FF3ED4F34B8CE8DCEC40492D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 997B676D82AACBB953BB4BB8244EDD8A /* AdmoreSDKDeepLink.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AdmoreSDKDeepLink/AdmoreSDKDeepLink-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AdmoreSDKDeepLink/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AdmoreSDKDeepLink/AdmoreSDKDeepLink.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AdmoreSDKDeepLink;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83AC634B935DFCB358A505EC456C04B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 997B676D82AACBB953BB4BB8244EDD8A /* AdmoreSDKDeepLink.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AdmoreSDKDeepLink/AdmoreSDKDeepLink-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AdmoreSDKDeepLink/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AdmoreSDKDeepLink/AdmoreSDKDeepLink.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AdmoreSDKDeepLink;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84EF3FFFFAB957D50F8FC2A0BA59E36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC6EBC6D9FA2F1F089E301E746608811 /* Pods-AdmoreSDKDeepLink_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AdmoreSDKDeepLink_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdmoreSDKDeepLink_Tests/Pods-AdmoreSDKDeepLink_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AdmoreSDKDeepLink_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -474,7 +575,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -482,112 +583,7 @@
 			};
 			name = Release;
 		};
-		6BD7972369BE99F32A6FCA56D49E7605 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96C045FDE16D9EB924B01299667EFFF8 /* Pods-ItrySDK_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ItrySDK_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ItrySDK_Example/Pods-ItrySDK_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ItrySDK_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		720905BB3824BA1BFF3792937FD8E32B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B11635564FADB0AA86CBDCF8580F75E /* Pods-ItrySDK_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ItrySDK_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ItrySDK_Tests/Pods-ItrySDK_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ItrySDK_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C4A60E86627D40665C3288B5AB6524D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B32D69E2ACB48A1F4663E4126A04F47C /* Pods-ItrySDK_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ItrySDK_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ItrySDK_Tests/Pods-ItrySDK_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ItrySDK_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D9DA7CBB635654DB3CB137846AC062BD /* Debug */ = {
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -623,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -631,9 +627,9 @@
 			};
 			name = Debug;
 		};
-		F3A7EFF07228DFD1B8732DD28249FCA2 /* Debug */ = {
+		AB4A5F83B4A18B3D3DBCA321AB7A2B1F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E2915D7E0C7484407C77AC860642A0C /* ItrySDK.xcconfig */;
+			baseConfigurationReference = 3519C820405FA365B51829392217FE5E /* Pods-AdmoreSDKDeepLink_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -646,14 +642,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ItrySDK/ItrySDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ItrySDK/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdmoreSDKDeepLink_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ItrySDK/ItrySDK.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdmoreSDKDeepLink_Example/Pods-AdmoreSDKDeepLink_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ItrySDK;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AdmoreSDKDeepLink_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -668,35 +668,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9DA7CBB635654DB3CB137846AC062BD /* Debug */,
-				5B2523835DF0F7253DABA3E98BD932C4 /* Release */,
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BEA7204878523C346888AE60BCC964E /* Build configuration list for PBXNativeTarget "Pods-ItrySDK_Example" */ = {
+		B93014DA3D9AAB655697F195E8838359 /* Build configuration list for PBXNativeTarget "Pods-AdmoreSDKDeepLink_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				28888BE78F387D531A4DB1D395EBE372 /* Debug */,
-				6BD7972369BE99F32A6FCA56D49E7605 /* Release */,
+				AB4A5F83B4A18B3D3DBCA321AB7A2B1F /* Debug */,
+				18736D90D9E4FDAA330EA57053193C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF257D1854F12DDA3E77DCF81DCB4E27 /* Build configuration list for PBXNativeTarget "ItrySDK" */ = {
+		C5FC804B4E5ACAF0A22FD1DBE94BA847 /* Build configuration list for PBXNativeTarget "AdmoreSDKDeepLink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3A7EFF07228DFD1B8732DD28249FCA2 /* Debug */,
-				1712AF91825336560D028C339DA0169F /* Release */,
+				43A967B2FF3ED4F34B8CE8DCEC40492D /* Debug */,
+				83AC634B935DFCB358A505EC456C04B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E46FB471C4C63904625A841728E3AA92 /* Build configuration list for PBXNativeTarget "Pods-ItrySDK_Tests" */ = {
+		FF14B60B72F4EDE68EDE797A92E6DF8A /* Build configuration list for PBXNativeTarget "Pods-AdmoreSDKDeepLink_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				720905BB3824BA1BFF3792937FD8E32B /* Debug */,
-				C4A60E86627D40665C3288B5AB6524D0 /* Release */,
+				134CFF59E93AB4978BE1A71F9C0F36C7 /* Debug */,
+				84EF3FFFFAB957D50F8FC2A0BA59E36A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

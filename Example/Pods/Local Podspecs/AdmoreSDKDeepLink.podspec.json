@@ -1,0 +1,23 @@
+{
+  "name": "AdmoreSDKDeepLink",
+  "version": "0.1.0",
+  "summary": "A short description of AdmoreSDKDeepLink.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/AdmoreSDKDeepLink",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wanglin.sun": "mkoosun@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/AdmoreSDKDeepLink.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "AdmoreSDKDeepLink/Classes/**/*",
+  "frameworks": "Foundation"
+}
