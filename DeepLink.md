@@ -21,6 +21,7 @@ DeepLink，又叫deep linking，中文翻译作深层链接。
 将 AdmoreSDKDeepLink.h 和 AdmoreSDKDeepLink.m放入工程。
 
 也可以直接pod命令安装
+
 ```ruby
 pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
 ```
@@ -32,25 +33,25 @@ pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
 
 **1. 在您的APP项目中，Info.plist 添加URL scheme**
 
-<img src="https://cloud.githubusercontent.com/assets/1057077/5710380/8d913f3e-9a6f-11e4-83a2-49f6564d7a8f.png" width="410" />
+![](xcodedemo.png)
 
 <br />
 **2. 引用 AdmoreSDKDeepLink.h**
 
-````objc
+```objc
 #import <AdmoreSDKDeepLink/AdmoreSDKDeepLink.h>
 ```
 <br />
 
 **3. 在 `application:didFinishLaunchingWithOptions:`中初始化**
 
-````objc
+```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [AdmoreSDKDeepLink setAppId:@"appId" appKey:@"appkey"];
     ...
 }
-````
+```
 
  >AppID：APP在多点广告的唯一ID
  
@@ -58,7 +59,7 @@ pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
 
 **4.在您的 AppDelegate 中 override`application:openURL:options:`方法，调用AdmoreSDK的`handleUrl:withAppId:`:**
 
-````objc
+```objc
 - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
 
     if( [AdmoreSDKDeepLink handleUrl:url] ) {
@@ -70,10 +71,10 @@ pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
     //或者直接 return [AdmoreSDKDeepLink handleUrl:url];
 }
 
-````
+```
 如果您的APP只支持iOS9(含)以上版本，只需添加以上函数即可。如果需要支持iOS9以下，则`application:handleOpenURL:`也需要处理
 
-````objc
+```objc
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
 
     if( [AdmoreSDKDeepLink handleUrl:url] ) {
@@ -84,7 +85,7 @@ pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
 
     //或者直接 return [AdmoreSDKDeepLink handleUrl:url];
 }
-````
+```
 
 <br />
 ##时序图
