@@ -11,7 +11,7 @@
 #import <CommonCrypto/CommonCryptor.h>
 #import <CommonCrypto/CommonDigest.h>
 
-#define THOST @"https://itry.com/admoresdkdeeplink/info"
+#define THOST @"https://am.admore.com.cn/deeplink/info"
 
 @implementation AdmoreSDKDeepLink
 
