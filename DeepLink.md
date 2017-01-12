@@ -1,0 +1,79 @@
+# 多点广告 DeepLink 接口
+
+## DeepLink
+DeepLink，又叫deep linking，中文翻译作深层链接。
+
+1. 简单地从用户体验来讲，DeepLink 就是可以在手机的浏览器上(Safari/Chorme)点击，便能直接跳转到已安装的应用中的某一个页面的技术。
+2. 乍一看，Deep Link不就是scheme么？不错，或者我们该说，目前iOS APP的 scheme，就是DeepLink的一种雏形（仅仅是跳转）。
+3. 我们需要您判断，如果是通过我们预先生成的scheme拉起应用，便向多点广告服务器发送一次数据请求，让我们知道您的APP已经联网打开。
+
+## QA：
+1. 是否APP的所有数据都会发到多点广告？
+
+ >只有通过多点广告投放的用户，会通过预先设定的scheme拉起应用，才会请求多点广告服务器。即仅对广告效果进行追踪。
+
+2. 是否可以不用SDK
+
+ >我们提供SDK只是针对传到多点广告的数据进行处理。我们的SDK是开源的，当然您也可以直接自己按照我们的要求处理下数据。
+
+
+## 安装
+
+可以直接pod命令安装
+```ruby
+pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
+```
+如果您不安装也可以直接把原始文件导入，在附件中。
+
+## 使用
+
+
+
+按照以下简单的步骤，在5分钟内为您的应用添加deep link支持。
+
+**1. 在您的APP项目中，Info.plist 添加URL scheme**
+
+<img src="https://cloud.githubusercontent.com/assets/1057077/5710380/8d913f3e-9a6f-11e4-83a2-49f6564d7a8f.png" width="410" />
+
+<br />
+**2. 引用 AdmoreSDK.h**
+
+````objc
+#import <AdmoreSDKDeepLink/AdmoreSDKDeepLink.h>
+```
+<br />
+**3. 在您的AppDelegate中override`application:openURL:options:`方法，调用AdmoreSDK的`handleUrl:withAppId:`:**
+
+````objc
+- (BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+
+    if( [AdmoreSDK handleUrl:url withAppkey:@"1234"] ) {
+        return YES;
+    }
+    //处理您的其他逻辑
+    return NO;
+
+    //或者直接 return [AdmoreSDK handleUrl:url withAppkey:@"1234"];
+}
+````
+如果您的APP只支持iOS9(含)以上版本，只需添加以上函数即可。如果需要支持iOS9以下，则`application:handleOpenURL:`也需要处理
+
+````objc
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+
+    if( [AdmoreSDK handleUrl:url withAppkey:@"1234"] ) {
+        return YES;
+    }
+    //处理您的其他逻辑
+    return NO;
+
+    //或者直接 return [AdmoreSDK handleUrl:url withAppkey:@"1234"];
+}
+````
+
+
+
+
+<br />
+##时序图
+![](DeepLink.png)
