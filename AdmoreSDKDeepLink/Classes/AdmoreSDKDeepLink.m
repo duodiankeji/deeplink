@@ -61,7 +61,7 @@
             [params setObject:idfa forKey:@"idfa"];
         }
         
-        long long time = (long long)[NSDate date].timeIntervalSince1970;
+        long long time = (long long)([NSDate date].timeIntervalSince1970 * 1000);
         
         NSString *key = [NSString stringWithFormat:@"%@?ai=%@&ak=%@&t=%lld", THOST, instance.appId, instance.appKey, time];
         
