@@ -14,6 +14,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [AdmoreSDKDeepLink setAppId:@"am123" appKey:@"appkey"];
+
+    [AdmoreSDKDeepLink handleUrl:[NSURL URLWithString:@"am1234://session=111&time=222"]];
     return YES;
 }
 
@@ -46,24 +50,24 @@
 
 - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     
-    if( [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"] ) {
+    if( [AdmoreSDKDeepLink handleUrl:url] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
     
-    //或者直接 return [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"];
+    //或者直接 return [AdmoreSDKDeepLink handleUrl:url];
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     
-    if( [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"] ) {
+    if( [AdmoreSDKDeepLink handleUrl:url] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
     
-    //或者直接 return [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"];
+    //或者直接 return [AdmoreSDKDeepLink handleUrl:url];
 }
 
 @end

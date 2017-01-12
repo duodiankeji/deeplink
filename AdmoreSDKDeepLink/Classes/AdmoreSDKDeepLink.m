@@ -13,17 +13,44 @@
 
 #define THOST @"https://am.admore.com.cn/deeplink/info"
 
+@interface AdmoreSDKDeepLink()
+
+@property (nonatomic, strong) NSString *appId;
+@property (nonatomic, strong) NSString *appKey;
+
+@end
+
 @implementation AdmoreSDKDeepLink
 
-#pragma mark - public
+#pragma mark - init
+
++ (AdmoreSDKDeepLink*) sharedInstance {
+    static AdmoreSDKDeepLink *instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [AdmoreSDKDeepLink new];
+    });
+    return instance;
+}
+
+#pragma mark - public api
+
+//初始化appId和appKey
++ (BOOL) setAppId:(NSString*)appId appKey:(NSString*)appKey {
+    
+    [AdmoreSDKDeepLink sharedInstance].appId = appId;
+    [AdmoreSDKDeepLink sharedInstance].appKey = appKey;
+}
 
 //处理scheme
-+ (BOOL) handleUrl:(NSURL*)url withAppkey:(NSString*)appkey {
++ (BOOL) handleUrl:(NSURL*)url {
     
-    if(url == nil || appkey.length == nil)
+    AdmoreSDKDeepLink *instance = [AdmoreSDKDeepLink sharedInstance];
+    
+    if(url == nil || instance.appId.length == nil || instance.appKey.length == nil)
         return NO;
     
-    if([url.absoluteString hasPrefix:appkey] || [url.absoluteString hasPrefix:[NSString stringWithFormat:@"am%", appkey]]) {
+    if([url.absoluteString hasPrefix:instance.appId] || [url.absoluteString hasPrefix:[NSString stringWithFormat:@"am%", instance.appId]]) {
         
         NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
         NSString *bundleId = [[NSBundle mainBundle]bundleIdentifier];
@@ -36,7 +63,7 @@
         
         long long time = (long long)[NSDate date].timeIntervalSince1970;
         
-        NSString *key = [NSString stringWithFormat:@"%@?a=%@&t=%lld", THOST, appkey, time];
+        NSString *key = [NSString stringWithFormat:@"%@?ai=%@&ak=%@&t=%lld", THOST, instance.appId, instance.appKey, time];
         
         key = [AdmoreSDKDeepLink md5:key];
         
@@ -46,7 +73,7 @@
         
         NSString *info = [AdmoreSDKDeepLink data_to_string:encryptData];
         
-        NSString *address = [NSString stringWithFormat:@"%@?a=%@&t=%lld&i=%@", THOST, appkey, time, info];
+        NSString *address = [NSString stringWithFormat:@"%@?a=%@&t=%lld&i=%@", THOST, instance.appId, time, info];
         
         [AdmoreSDKDeepLink requestWithUrl:[NSURL URLWithString:address] reset:YES];
         

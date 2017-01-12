@@ -2,7 +2,7 @@
 #import <UIKit/UIKit.h>
 #endif
 
-#import "AdmoreSDK.h"
+#import "AdmoreSDKDeepLink.h"
 
 FOUNDATION_EXPORT double AdmoreSDKDeepLinkVersionNumber;
 FOUNDATION_EXPORT const unsigned char AdmoreSDKDeepLinkVersionString[];

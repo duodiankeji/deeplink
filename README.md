@@ -4,7 +4,7 @@
 ## 说明
 1. appID：app在《多点广告开放平台》的唯一ID
 
-2. appKey：为了避免您的appID暴露，使用appKey用于交互
+2. appKey：《多点广告开放平台》分配
 
 3. scheme头：《多点广告开放平台》分配，比如`am1234://`，需要在app的工程文件的`URL Types`项里添加: `identifier`: `admore`，`URL Schemes`: `am1234 `
 
@@ -15,18 +15,28 @@
 
 2. 或者使用Pod安装方式：pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
 
-3. 在您的AppDelegate中override `application:openURL:options:`方法，调用AdmoreSDK的`handleUrl:withAppId:`:
+3. 中`application:didFinishLaunchingWithOptions:`中初始化
+
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [AdmoreSDKDeepLink setAppId:@"appId" appKey:@"appkey"];
+    ...
+}
+```
+
+4. 在您的AppDelegate中override `application:openURL:options:`方法，调用AdmoreSDK的`handleUrl:withAppId:`:
 
 ```
 - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     
-    if( [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"] ) {
+    if( [AdmoreSDKDeepLink handleUrl:url] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
     
-    //或者直接 return [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"];
+    //或者直接 return [AdmoreSDKDeepLink handleUrl:url];
 }
 
 ```
@@ -35,13 +45,13 @@
 ```
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     
-    if( [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"] ) {
+    if( [AdmoreSDKDeepLink handleUrl:url] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
     
-    //或者直接 return [AdmoreSDKDeepLink handleUrl:url withAppkey:@"1234"];
+    //或者直接 return [AdmoreSDKDeepLink handleUrl:url];
 }
 ```
 ## 流程
@@ -52,7 +62,7 @@
 1. 使用get方式上传, 形式如下：
 
 ```
-https://itry.com/admoresdk/info?a=appkey&t=uploadtime&i=info
+https://itry.com/admoresdk/info?a=appId&t=uploadtime&i=info
 ```
 
 示例：
@@ -63,7 +73,10 @@ https://itry.com/admoresdk/info?a=1234&t=1484116404&i=b01308a20167267e3dceb548c1
 
 info为json的aes加密后的二进制字符串，
 
-**aes key：**  "https://itry.com/admoresdk/info?a=appkey&t=uploadtime" 的 md5值（32位）
+**aes key：**  
+
+字符串：https://am.admore.com.cn/deeplink/info?ai=appId&ak=appkey&t=uploadtime 的md5值（32位）
+
 
 **json：**
 

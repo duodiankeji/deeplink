@@ -10,7 +10,10 @@
 
 @interface AdmoreSDKDeepLink : NSObject
 
+//初始化appId和appKey
++ (BOOL) setAppId:(NSString*)appKey appKey:(NSString*)appKey;
+
 //处理scheme
-+ (BOOL) handleUrl:(NSURL*)url withAppkey:(NSString*)appkey;
++ (BOOL) handleUrl:(NSURL*)url;
 
 @end
