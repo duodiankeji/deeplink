@@ -19,13 +19,11 @@ DeepLink，又叫deep linking，中文翻译作深层链接。
 
 ## 安装
 
-DeepLinkKit is available through [CocoaPods](http://cocoapods.org). To install
-the library, simply add the following line to your Podfile:
+可以直接pod命令安装
 ```ruby
-pod "DeepLinkKit"
+pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
 ```
-
-If you don't use CocoaPods, you can include all of the source files from the [DeepLinkKit directory](https://github.com/button/DeepLinkKit/tree/master/DeepLinkKit) in your project.
+如果您不安装也可以直接把原始文件导入，在附件中。
 
 ## 使用
 
