@@ -16,7 +16,10 @@ DeepLink，又叫deep linking，中文翻译作深层链接。
 
  >我们提供SDK只是针对传到多点广告的数据进行处理。我们的SDK是开源的，当然您也可以直接自己按照我们的要求处理下数据。
 
+3. IDFA
 
+ >SDK中使用了IDFA，请在提交AppStore时请选择使用效果追踪。如果您之前项目中已使用IDFA请忽略该项。
+ 
 ## 安装
 将 AdmoreSDKDeepLink.h 和 AdmoreSDKDeepLink.m放入工程。
 
