@@ -51,41 +51,44 @@ pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
     ...
 }
 ````
-appID：app在《多点广告》的唯一ID
-appKey：《多点广告》分配
+
+ >AppID：APP在多点广告的唯一ID
+ 
+ >AppKey：多点广告分配
 
 **4.在您的 AppDelegate 中 override`application:openURL:options:`方法，调用AdmoreSDK的`handleUrl:withAppId:`:**
 
 ````objc
 - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
 
-    if( [AdmoreSDK handleUrl:url withAppkey:@"1234"] ) {
+    if( [AdmoreSDKDeepLink handleUrl:url] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
 
-    //或者直接 return [AdmoreSDK handleUrl:url withAppkey:@"1234"];
+    //或者直接 return [AdmoreSDKDeepLink handleUrl:url];
 }
+
 ````
 如果您的APP只支持iOS9(含)以上版本，只需添加以上函数即可。如果需要支持iOS9以下，则`application:handleOpenURL:`也需要处理
 
 ````objc
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
 
-    if( [AdmoreSDK handleUrl:url withAppkey:@"1234"] ) {
+    if( [AdmoreSDKDeepLink handleUrl:url] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
 
-    //或者直接 return [AdmoreSDK handleUrl:url withAppkey:@"1234"];
+    //或者直接 return [AdmoreSDKDeepLink handleUrl:url];
 }
 ````
-
-
-
 
 <br />
 ##时序图
 ![](DeepLink.png)
+
+##业务图
+![](497397626968604373.png)
