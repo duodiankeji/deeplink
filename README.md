@@ -11,11 +11,11 @@
 4. idfa：sdk中使用了idfa，请在提交appstore审核时注意
 
 ## 使用方法
-1. 将AdmoreSDK.h 和 AdmoreSDK.h放入工程，
+1. 将AdmoreSDKDeepLink.h和AdmoreSDKDeepLink.m放入工程，
 
 2. 或者使用Pod安装方式：pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
 
-3. 中`application:didFinishLaunchingWithOptions:`中初始化
+3. 在`application:didFinishLaunchingWithOptions:`中初始化
 
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
