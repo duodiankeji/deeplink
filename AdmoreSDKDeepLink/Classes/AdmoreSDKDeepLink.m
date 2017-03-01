@@ -36,7 +36,7 @@
 #pragma mark - public api
 
 //初始化appId和appKey
-+ (BOOL) setAppId:(NSString*)appId appKey:(NSString*)appKey {
++ (void) setAppId:(NSString*)appId appKey:(NSString*)appKey {
     
     [AdmoreSDKDeepLink sharedInstance].appId = appId;
     [AdmoreSDKDeepLink sharedInstance].appKey = appKey;
@@ -47,13 +47,12 @@
     
     AdmoreSDKDeepLink *instance = [AdmoreSDKDeepLink sharedInstance];
     
-    if(url == nil || instance.appId.length == nil || instance.appKey.length == nil)
+    if(url == nil || instance.appId.length == 0 || instance.appKey.length == 0)
         return NO;
     
-    if([url.absoluteString hasPrefix:instance.appId] || [url.absoluteString hasPrefix:[NSString stringWithFormat:@"am%", instance.appId]]) {
+    if([url.absoluteString hasPrefix:instance.appId] || [url.absoluteString hasPrefix:[NSString stringWithFormat:@"am%@", instance.appId]]) {
         
         NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-        NSString *bundleId = [[NSBundle mainBundle]bundleIdentifier];
         
         NSMutableDictionary *params = [NSMutableDictionary new];
         [params setObject:url.absoluteString forKey:@"url"];
