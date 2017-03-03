@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72D4A2F01E66704F00E676A2 /* AdmoreDeepLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D4A2EF1E66704F00E676A2 /* AdmoreDeepLink.m */; };
-		72D4A2F11E66704F00E676A2 /* AdmoreDeepLink.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72D4A2EE1E66704F00E676A2 /* AdmoreDeepLink.h */; };
+		72D4A2F91E66707000E676A2 /* AdmoreSDKDeepLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D4A2F81E66707000E676A2 /* AdmoreSDKDeepLink.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +17,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				72D4A2F11E66704F00E676A2 /* AdmoreDeepLink.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		72D4A2EB1E66704F00E676A2 /* libAdmoreDeepLink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAdmoreDeepLink.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		72D4A2EE1E66704F00E676A2 /* AdmoreDeepLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdmoreDeepLink.h; sourceTree = "<group>"; };
-		72D4A2EF1E66704F00E676A2 /* AdmoreDeepLink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdmoreDeepLink.m; sourceTree = "<group>"; };
+		72D4A2F71E66707000E676A2 /* AdmoreSDKDeepLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdmoreSDKDeepLink.h; path = ../../AdmoreSDKDeepLink/Classes/AdmoreSDKDeepLink.h; sourceTree = "<group>"; };
+		72D4A2F81E66707000E676A2 /* AdmoreSDKDeepLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdmoreSDKDeepLink.m; path = ../../AdmoreSDKDeepLink/Classes/AdmoreSDKDeepLink.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +58,8 @@
 		72D4A2ED1E66704F00E676A2 /* AdmoreDeepLink */ = {
 			isa = PBXGroup;
 			children = (
-				72D4A2EE1E66704F00E676A2 /* AdmoreDeepLink.h */,
-				72D4A2EF1E66704F00E676A2 /* AdmoreDeepLink.m */,
+				72D4A2F71E66707000E676A2 /* AdmoreSDKDeepLink.h */,
+				72D4A2F81E66707000E676A2 /* AdmoreSDKDeepLink.m */,
 			);
 			path = AdmoreDeepLink;
 			sourceTree = "<group>";
@@ -124,7 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72D4A2F01E66704F00E676A2 /* AdmoreDeepLink.m in Sources */,
+				72D4A2F91E66707000E676A2 /* AdmoreSDKDeepLink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

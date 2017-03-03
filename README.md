@@ -1,23 +1,54 @@
-# AdmoreSDKDeepLink 使用说明
-***
+# 多点广告 DeepLink 接口
 
-## 说明
-1. appID：app在《多点广告开放平台》的唯一ID
+## DeepLink
+DeepLink，又叫deep linking，中文翻译作深层链接。
 
-2. appKey：《多点广告开放平台》分配
+1. 简单地从用户体验来讲，DeepLink 就是可以在手机的浏览器上(Safari/Chorme)点击，便能直接跳转到已安装的应用中的某一个页面的技术。
+2. 乍一看，Deep Link不就是scheme么？不错，或者我们该说，目前iOS APP的 scheme，就是DeepLink的一种雏形（仅仅是跳转）。
+3. 我们需要您判断，如果是通过我们预先生成的scheme拉起应用，便向多点广告服务器发送一次数据请求，让我们知道您的APP已经联网打开。
 
-3. scheme头：《多点广告开放平台》分配，比如`am1234://`，需要在app的工程文件的`URL Types`项里添加: `identifier`: `admore`，`URL Schemes`: `am1234 `
+## QA：
+1. 是否APP的所有数据都会发到多点广告？
 
-4. idfa：sdk中使用了idfa，请在提交appstore审核时注意
+ >只有通过多点广告投放的用户，会通过预先设定的scheme拉起应用，才会请求多点广告服务器。即仅对广告效果进行追踪。
 
-## 使用方法
-1. 将AdmoreSDKDeepLink.h和AdmoreSDKDeepLink.m放入工程，
+2. 是否可以不用SDK
 
-2. 或者使用Pod安装方式：pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
+ >我们提供SDK只是针对传到多点广告的数据进行处理。我们的SDK是开源的，当然您也可以直接自己按照我们的要求处理下数据。
 
-3. 在`application:didFinishLaunchingWithOptions:`中初始化
+3. IDFA
 
+ >SDK中使用了IDFA，请在提交AppStore时请选择使用效果追踪。如果您之前项目中已使用IDFA请忽略该项。
+ 
+## 安装
+将 AdmoreSDKDeepLink.h 和 AdmoreSDKDeepLink.m放入工程。
+
+也可以直接pod命令安装
+
+```ruby
+pod 'AdmoreSDKDeepLink', :git => 'https://github.com/duodiankeji/deeplink.git'
 ```
+
+## 使用
+
+
+按照以下简单的步骤，在5分钟内为您的应用添加deep link支持。
+
+**1. 在您的APP项目中，Info.plist 添加URL scheme**
+
+![](xcodedemo.png)
+
+<br />
+**2. 引用 AdmoreSDKDeepLink.h**
+
+```objc
+#import <AdmoreSDKDeepLink/AdmoreSDKDeepLink.h>
+```
+<br />
+
+**3. 在 `application:didFinishLaunchingWithOptions:`中初始化**
+
+```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [AdmoreSDKDeepLink setAppId:@"appId" appKey:@"appkey"];
@@ -25,72 +56,43 @@
 }
 ```
 
-4. 在您的AppDelegate中override `application:openURL:options:`方法，调用AdmoreSDK的`handleUrl:withAppId:`:
+ >AppID：APP在多点广告的唯一ID
+ 
+ >AppKey：多点广告分配
 
-```
+**4.在您的 AppDelegate 中 override`application:openURL:options:`方法，调用AdmoreSDK的`handleUrl:withAppId:`:**
+
+```objc
 - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    
+
     if( [AdmoreSDKDeepLink handleUrl:url] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
-    
+
     //或者直接 return [AdmoreSDKDeepLink handleUrl:url];
 }
 
 ```
-如果您的app只支持ios9(含)以上版本，只需添加以上函数即可。如果需要支持ios9以下，则`application:handleOpenURL:`也需要处理
+如果您的APP只支持iOS9(含)以上版本，只需添加以上函数即可。如果需要支持iOS9以下，则`application:handleOpenURL:`也需要处理
 
-```
+```objc
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    
+
     if( [AdmoreSDKDeepLink handleUrl:url] ) {
         return YES;
     }
     //处理您的其他逻辑
     return NO;
-    
+
     //或者直接 return [AdmoreSDKDeepLink handleUrl:url];
 }
 ```
-## 流程
-![](Sequence.png)
 
+<br />
+##时序图
+![](DeepLink.png)
 
-## 关于上传接口(地址待定)
-1. 使用get方式上传, 形式如下：
-
-```
-https://itry.com/admoresdk/info?a=appId&t=uploadtime&i=info
-```
-
-示例：
-
-```
-https://itry.com/admoresdk/info?a=1234&t=1484116404&i=b01308a20167267e3dceb548c134fbb2f36dbb1c2f6cfeef0eda79a2c4eb1b4253002798993f780ea85221ab4c61cb567d6a4bcb4f3438b484dc32fe41042bf1dd385c44c2de2a151c23ea88c60b70a5f74ecb5a1e13fd2633a35df0c0392e45938ab2290a862b05ab95ed64b8605a77
-```
-
-info为json的aes加密后的二进制字符串，
-
-**aes key：**  
-
-字符串：https://am.admore.com.cn/deeplink/info?ai=appId&ak=appkey&t=uploadtime 的md5值（32位）
-
-
-**json：**
-
-```
-{
-  "url" : "am1234:\/\/start?session=12&time=123",
-  "idfa" : "F4F9A60C-A5AC-4D26-B168-247A66C34A3D"
-}
-```
-
-## Author
-
-mkoo, wanglin.sun@duodian.com
-
-## License
-
-Copyright © 2017 北京多点科技股份有限公司. All Rights Reserved
+##业务图
+![](497397626968604373.png)
