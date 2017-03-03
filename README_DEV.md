@@ -58,11 +58,11 @@
 ![](Sequence.png)
 
 
-## 关于上传接口(地址待定)
+## 关于上传接口
 1. 使用get方式上传, 形式如下：
 
 ```
-https://itry.com/admoresdk/info?a=appId&t=uploadtime&i=info
+https://am.admore.com.cn/deeplink/info?a=appId&t=uploadtime&i=info
 ```
 
 示例：
