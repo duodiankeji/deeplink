@@ -135,8 +135,8 @@
 
 #pragma mark - util
 
-+ (NSString*)md5:(NSString *)str
-{
++ (NSString*)md5:(NSString *)str {
+    
     const char *cStr = [str UTF8String];
     unsigned char result[16];
     CC_MD5(cStr,
@@ -166,8 +166,8 @@
 }
 
 //aes加密
-+ (NSData *)data_aes256_encrypt:(NSData*)data key:(NSString *)key
-{
++ (NSData *)data_aes256_encrypt:(NSData*)data key:(NSString *)key {
+    
     char keyPtr[kCCKeySizeAES256+1];
     bzero(keyPtr, sizeof(keyPtr));
     [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];

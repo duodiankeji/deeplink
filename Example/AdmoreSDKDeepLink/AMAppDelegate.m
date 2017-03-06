@@ -17,7 +17,6 @@
     
     [AdmoreSDKDeepLink setAppId:@"am123" appKey:@"appkey"];
 
-    [AdmoreSDKDeepLink handleUrl:[NSURL URLWithString:@"am1234://session=111&time=222"]];
     return YES;
 }
 
