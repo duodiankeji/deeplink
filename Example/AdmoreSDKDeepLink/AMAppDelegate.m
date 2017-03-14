@@ -8,47 +8,62 @@
 
 #import "AMAppDelegate.h"
 #import "AdmoreSDKDeepLink.h"
+#import "WebViewController.h"
 
 @implementation AMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    
-    [AdmoreSDKDeepLink setAppId:@"am123" appKey:@"appkey"];
+    [AdmoreSDKDeepLink setAppId:@"am888888" appKey:@"key888888"];
 
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     
+    //NOTE: 方案一／方案二 选其一即可
+    
+    //方案一：用webview打开试客落地页
+    NSString *broserHeader = @"am888888://browser?url=";
+    
+    if([url.absoluteString hasPrefix:broserHeader]) {
+        
+        NSString *urlParam = [url.absoluteString substringFromIndex:broserHeader.length];
+        urlParam = [urlParam stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        
+        WebViewController *vc = [WebViewController new];
+        vc.url = urlParam;
+        
+        UIViewController *rootVc = self.window.rootViewController;
+        if([rootVc isKindOfClass:[UINavigationController class]]) {
+            [((UINavigationController*)rootVc) pushViewController:vc animated:YES];
+        } else {
+            [rootVc presentViewController:vc animated:YES completion:nil];
+        }
+        return YES;
+    }
+    
+    //方案二：发送数据给试客服务器
     if( [AdmoreSDKDeepLink handleUrl:url] ) {
         return YES;
     }
@@ -60,13 +75,11 @@
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     
-    if( [AdmoreSDKDeepLink handleUrl:url] ) {
-        return YES;
-    }
-    //处理您的其他逻辑
-    return NO;
+    return [self application:application openURL:url options:@{}];
+}
+
+- (IBAction)close:(id)sender {
     
-    //或者直接 return [AdmoreSDKDeepLink handleUrl:url];
 }
 
 @end

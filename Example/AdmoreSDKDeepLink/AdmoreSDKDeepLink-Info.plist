@@ -26,10 +26,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>AdMore</string>
+			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>am12345678</string>
+				<string>am888888</string>
 			</array>
 		</dict>
 	</array>

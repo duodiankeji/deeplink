@@ -1,3 +1,18 @@
+# 接入方案选择
+1. 使用webview拉起“多点广告落地页”
+> 接入方式：注册scheme, 然后取其中url参数拉起webview即可; 
+> 
+> 可参考https://github.com/duodiankeji/deeplink.git里方案一代码，客户可使用自己原有的webview;
+> 
+> 只要提供一个可拉起webview的scheme入口即可，无需集成sdk。
+
+2. 使用”多点广告 DeepLink 接口“发送数据给多点广告
+> 优点：数据进行加密发送防刷防泄漏，不改变原产品启动流程；
+> 
+> 接入方法详见以下文档
+
+*** 
+
 # 多点广告 DeepLink 接口
 
 ## DeepLink

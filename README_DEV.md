@@ -68,7 +68,7 @@ https://am.admore.com.cn/deeplink/info?a=appId&t=uploadtime&i=info
 示例：
 
 ```
-https://itry.com/admoresdk/info?a=1234&t=1484116404&i=b01308a20167267e3dceb548c134fbb2f36dbb1c2f6cfeef0eda79a2c4eb1b4253002798993f780ea85221ab4c61cb567d6a4bcb4f3438b484dc32fe41042bf1dd385c44c2de2a151c23ea88c60b70a5f74ecb5a1e13fd2633a35df0c0392e45938ab2290a862b05ab95ed64b8605a77
+https://am.admore.com.cn/deeplink/info?a=1234&t=1484116404&i=b01308a20167267e3dceb548c134fbb2f36dbb1c2f6cfeef0eda79a2c4eb1b4253002798993f780ea85221ab4c61cb567d6a4bcb4f3438b484dc32fe41042bf1dd385c44c2de2a151c23ea88c60b70a5f74ecb5a1e13fd2633a35df0c0392e45938ab2290a862b05ab95ed64b8605a77
 ```
 
 info为json的aes加密后的二进制字符串，
