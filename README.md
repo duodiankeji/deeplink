@@ -2,7 +2,7 @@
 1. 使用webview拉起“多点广告落地页”
 > 接入方式：注册scheme, 然后取其中url参数拉起webview即可; 
 > 
-> 可参考https://github.com/duodiankeji/deeplink.git里方案一代码，客户可使用自己原有的webview;
+> 可参考https://github.com/duodiankeji/deeplink.git 里方案一代码，客户可使用自己原有的webview;
 > 
 > 只要提供一个可拉起webview的scheme入口即可，无需集成sdk。
 
